@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+
+header {
+    background-color: #000;
+    padding: 16px 0;
+}
+
+.container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.login ul li {
+    list-style: none;
+}
+
+.login ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+header button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+i {
+    color: #fff;
+}
+
+.assine {
+    padding: 8px;
+    background-color: #ffce00;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+#busca {
+    padding: 16px 0;
+}
+
+.busca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+h1 {
+    font-size: 32px;
+    color: #fff;
+    
+}
+
+.busca button {
+    padding: 8px;
+    width: 200px;
+    background-color: #cb0003;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.btnEmail a {
+    display: flex;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    
+}
+
+.btnEmail {
+    width: 220px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.busca input {
+    padding: 8px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+
+nav .menu {
+    display: flex;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+.menu > li {
+    list-style: none;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    border-top: 4px solid transparent;
+    
+}
+.menu li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #000;
+}
+nav .submenu {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    width: 300px;
+    top: 120%;
+    border: 1px solid #ccc;
+    padding: 8px ;
+    
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-top: 4px solid red;
+}
+
+
+
+
+.submenu li {
+    list-style: none;
+    padding: 8px 0;
+    
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.estruturaPrincipal {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+aside {
+    border-left: 1px solid #ccc;
+}
+
+main {
+    padding: 8px;
+}
+
+#destaque {
+    padding: 16px 0;
+}
+
+#destaque img {
+    width: 100%;
+}
+
+#destaque h2 {
+    margin: 8px 0;
+}
+
+#destaque article a,
+#novidades article a,
+#noticias article a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+#novidades {
+    padding: 16px;
+}
+
+#novidades article {
+    margin-bottom: 16px;
+}
+
+#novidades article img {
+    width: 100%;
+}
+
+#novidades article h3 {
+    margin: 8px 0;
+}
+
+article p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+#noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+#noticias img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .login #lista-one {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+        width: 100px;
+        text-align: center;        
+    }
+
+    .login button {
+        padding: 5px;
+        width: 70px;
+    }
+
+    .busca div {
+        display: none;
+    }
+
+    .busca {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+
+    }
+
+    .menu li {
+        margin-bottom: 8px;
+    }
+
+    nav .submenu {
+        display: block;
+        position: relative;
+        width: 300px;
+        border: none;
+        padding: 0;
+        
+    }
+    
+    nav {
+        display: none;
+    }
+
+    #btn-menu {
+        padding: 16px 0;
+        display: block;
+    }
+
+    #btn-menu .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-menu {
+        padding: 5px;
+        width: 80px;
+        cursor: pointer;
+        background-color: #cb0003;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        font-weight:bolder       
+    }
+
+    
+    .estruturaPrincipal{
+        display: block;
+        
+    }
+
+    #destaque img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px ;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #noticias {
+        display: block;
+    }
+
+    #noticias img {
+        width: 100%;   
+    }
+
+    #noticias article {
+        margin-bottom: 16px;
+    }
+
+    aside {
+        border-left: none;
+    }
+
+    .menu li:hover {
+        border-top: none;
+    }
+    
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .login #lista-one {
+        display: none;
+    }
+
+    .card-dolar, .card-temperatura {
+        display: none;
+    }
+
+    .busca {
+        justify-content: flex-start;
+        padding: 16px 0;
+    }
+
+    .busca form input {
+        margin-left: 24px;
+        width: 300px;
+
+    }
+
+    #noticias {
+        display: grid;
+        grid-template-columns: repeat(2, 46%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+    
+
+
+
+
+}
