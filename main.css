@@ -389,7 +389,9 @@ article p {
         row-gap: 5%;
     }
     
-
+    nav {
+        display: block;
+    }
 
 
 
