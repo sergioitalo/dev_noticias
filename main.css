@@ -46,9 +46,7 @@ header button {
     border: none;
 }
 
-i {
-    color: #fff;
-}
+
 
 .assine {
     padding: 8px;
@@ -117,10 +115,15 @@ h1 {
     display: none;
 }
 
+
+nav {
+    display: block ;
+}
 nav .menu {
     display: flex;
     border-top: 2px solid #000;
     border-bottom: 1px solid #ccc;
+    
     
 }
 
